@@ -1,16 +1,16 @@
 package com.example.bankingapp.mapper;
 
-import com.example.bankingapp.dto.ClientDTO;
-import com.example.bankingapp.entities.Client;
+import com.example.bankingapp.dto.ServiceDTO;
+import com.example.bankingapp.entities.Service;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 
 @Mapper(componentModel = "spring")
-public interface ClientMapper {
+public interface ServiceMapper {
 
     @Mapping(source = "consultant.id", target = "consultantId")
-    ClientDTO clientToClientDTO(Client client);
+    ServiceDTO serviceToServiceDTO(Service service);
 
     @Mapping(source = "consultantId", target = "consultant.id")
-    Client clientDTOtoClient(ClientDTO clientDTO);
+    Service serviceDTOtoService(ServiceDTO serviceDTO);
 }
