@@ -14,7 +14,7 @@ import com.example.bankingapp.entities.Consultant;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/consultants")
+@RequestMapping("/consultants")
 public class ConsultantController {
 
 
