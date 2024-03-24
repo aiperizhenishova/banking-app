@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/clients")
+@RequestMapping("/client")
 public class ClientController {
 
 
@@ -20,7 +20,7 @@ public class ClientController {
 
 
     // GET: Получение списка всех клиентов
-    @GetMapping("/clients")
+    @GetMapping
     public ResponseEntity<List<Client>> getAllClients() {
         List<Client> clients = clientService.getAllClients();
         return new ResponseEntity<>(clients, HttpStatus.OK);

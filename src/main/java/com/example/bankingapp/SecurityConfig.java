@@ -11,7 +11,7 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 
 import java.net.http.HttpClient;
 
-@SpringBootApplication
+//@SpringBootApplication
 @ComponentScan(basePackages = "com.example.bankingapp")
 @Configuration
 @EnableWebSecurity

@@ -17,6 +17,7 @@ public class Client {
     private String passportId;
 
 
+
     public Long getId() {
         return id;
     }
@@ -51,6 +52,13 @@ public class Client {
     public Client setConsultant(Consultant consultant) {
         this.consultant = consultant;
         return this;
+    }
+
+
+
+
+    public Long getConsultantId() {
+        return consultant != null ? consultant.getId() : null;
     }
 
     @ManyToOne
