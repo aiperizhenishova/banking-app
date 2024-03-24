@@ -3,11 +3,11 @@ package com.example.bankingapp;
 import com.example.bankingapp.entities.Client;
 import com.example.bankingapp.entities.Consultant;
 import com.example.bankingapp.entities.Service;
-import jakarta.persistence.EntityManager;
-import jakarta.persistence.PersistenceContext;
-import jakarta.transaction.Transactional;
 import org.springframework.stereotype.Component;
 
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+import javax.transaction.Transactional;
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -17,7 +17,7 @@ import java.util.List;
 @Component      //этот класс является компонентом
 public class InitialDataLoader {
 
-    @PersistenceContext      // мы хотим использовать entityManager для работы с базой данных.
+    @PersistenceContext    // мы хотим использовать entityManager для работы с базой данных.
     private EntityManager entityManager;
 
     @Transactional

@@ -1,7 +1,9 @@
 package com.example.bankingapp.entities;
 
-import jakarta.persistence.*;
+
 import lombok.Data;
+
+import javax.persistence.*;
 
 
 @Entity
