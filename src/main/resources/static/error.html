@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Page</title>
+</head>
+<body>
+<h1>Error</h1>
+<p>Please, try again</p>
+
+<!-- Отображение информации об ошибке из объекта Model -->
+<p th:if="${errorMessage}" th:text="${errorMessage}"></p>
+<p th:if="${errorCode}" th:text="${errorCode}"></p>
+</body>
+</html>
