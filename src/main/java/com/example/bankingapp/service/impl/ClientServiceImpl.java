@@ -1,7 +1,8 @@
-package com.example.bankingapp.service;
+package com.example.bankingapp.service.impl;
 
 import com.example.bankingapp.entities.Client;
 import com.example.bankingapp.repositories.ClientRepository;
+import com.example.bankingapp.service.ClientService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -1,7 +1,8 @@
-package com.example.bankingapp.service;
+package com.example.bankingapp.service.impl;
 
 import com.example.bankingapp.entities.Service;
 import com.example.bankingapp.repositories.ServiceRepository;
+import com.example.bankingapp.service.ServiceService;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;

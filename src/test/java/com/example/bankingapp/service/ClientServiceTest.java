@@ -3,6 +3,7 @@ package com.example.bankingapp.service;
 
 import com.example.bankingapp.entities.Client;
 import com.example.bankingapp.repositories.ClientRepository;
+import com.example.bankingapp.service.impl.ClientServiceImpl;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
