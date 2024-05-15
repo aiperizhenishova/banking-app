@@ -3,7 +3,6 @@ package com.example.bankingapp.controllers;
 import com.example.bankingapp.dto.AuthResponseDTO;
 import com.example.bankingapp.dto.LoginDto;
 import com.example.bankingapp.dto.RegisterDto;
-import com.example.bankingapp.models.Role;
 import com.example.bankingapp.models.UserEntity;
 import com.example.bankingapp.repositories.RoleRepository;
 import com.example.bankingapp.repositories.UserRepository;
@@ -20,8 +19,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import com.example.bankingapp.models.Role;
-
 
 import java.util.Collections;
 

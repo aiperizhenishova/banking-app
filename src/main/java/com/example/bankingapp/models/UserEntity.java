@@ -24,4 +24,40 @@ public class UserEntity {
     @JoinTable(name = "user_roles", joinColumns = @JoinColumn(name = "user_id", referencedColumnName = "id"),
             inverseJoinColumns = @JoinColumn(name = "role_id", referencedColumnName = "id"))
     private List<Role> roles = new ArrayList<>();
+
+    public int getId() {
+        return id;
+    }
+
+    public UserEntity setId(int id) {
+        this.id = id;
+        return this;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public UserEntity setUsername(String username) {
+        this.username = username;
+        return this;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public UserEntity setPassword(String password) {
+        this.password = password;
+        return this;
+    }
+
+    public List<Role> getRoles() {
+        return roles;
+    }
+
+    public UserEntity setRoles(List<Role> roles) {
+        this.roles = roles;
+        return this;
+    }
 }

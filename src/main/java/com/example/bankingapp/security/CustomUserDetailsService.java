@@ -1,8 +1,6 @@
 package com.example.bankingapp.security;
 
-import com.pokemonreview.api.models.Role;
-import com.pokemonreview.api.models.UserEntity;
-import com.pokemonreview.api.repository.UserRepository;
+import com.example.bankingapp.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -11,6 +9,9 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
+import com.example.bankingapp.models.UserEntity;
+import com.example.bankingapp.models.Role;
+
 
 import java.util.Collection;
 import java.util.List;

@@ -13,14 +13,14 @@ import java.util.Date;
 
 @Component
 public class JWTGenerator {
-	//private static final KeyPair keyPair = Keys.keyPairFor(SignatureAlgorithm.RS256);
+
 	private static final Key key = Keys.secretKeyFor(SignatureAlgorithm.HS512);
-	
+
 	public String generateToken(Authentication authentication) {
 		String username = authentication.getName();
 		Date currentDate = new Date();
 		Date expireDate = new Date(currentDate.getTime() + SecurityConstants.JWT_EXPIRATION);
-		
+
 		String token = Jwts.builder()
 				.setSubject(username)
 				.setIssuedAt( new Date())
@@ -39,13 +39,13 @@ public class JWTGenerator {
 				.getBody();
 		return claims.getSubject();
 	}
-	
+
 	public boolean validateToken(String token) {
 		try {
 			Jwts.parserBuilder()
-			.setSigningKey(key)
-			.build()
-			.parseClaimsJws(token);
+					.setSigningKey(key)
+					.build()
+					.parseClaimsJws(token);
 			return true;
 		} catch (Exception ex) {
 			throw new AuthenticationCredentialsNotFoundException("JWT was exprired or incorrect",ex.fillInStackTrace());
