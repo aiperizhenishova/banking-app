@@ -1,10 +1,6 @@
 package com.example.bankingapp.entities;
 
-
-
-
-import javax.persistence.*;
-import java.util.List;
+import jakarta.persistence.*;
 
 
 @Entity
